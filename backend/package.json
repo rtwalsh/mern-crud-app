@@ -1,0 +1,55 @@
+{
+  "name": "backend",
+  "description": "contacts API server",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {},
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "nodemonConfig": {
+    "ignore": ["node_modules/*"]
+  },
+  "scripts": {
+    "test": "npm run eslint && npm run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "start": "nodemon src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "feathers": "^2.2.4",
+    "feathers-configuration": "^0.4.2",
+    "feathers-errors": "^2.9.2",
+    "feathers-hooks": "^2.1.2",
+    "feathers-hooks-common": "^4.17.10",
+    "feathers-mongoose": "^6.2.0",
+    "feathers-rest": "^1.8.1",
+    "feathers-socketio": "^2.0.1",
+    "helmet": "^3.13.0",
+    "mongoose": "^5.3.1",
+    "mongoose-type-email": "^1.0.9",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
